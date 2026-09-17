@@ -1,10 +1,37 @@
+import { useState } from 'react'
 import PageHero from '../components/PageHero'
 import ScrollReveal from '../components/ScrollReveal'
 
 export default function Contact() {
+  const [submitted, setSubmitted] = useState(false)
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Thank you for your message! We will get back to you shortly.')
+    setSubmitted(true)
+  }
+
+  if (submitted) {
+    return (
+      <>
+        <PageHero title="Contact Us" />
+        <section className="section">
+          <div className="container" style={{ textAlign: 'center', padding: '80px 0' }}>
+            <div style={{
+              width: 80, height: 80, borderRadius: '50%', background: 'var(--secondary)',
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24,
+            }}>
+              <i className="fas fa-check" style={{ fontSize: '2rem', color: 'var(--white)' }}></i>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2.2rem', marginBottom: 12, color: 'var(--primary)' }}>
+              Thank You!
+            </h2>
+            <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', maxWidth: 500, margin: '0 auto' }}>
+              Your message has been received. We'll get back to you within 24 hours.
+            </p>
+          </div>
+        </section>
+      </>
+    )
   }
 
   return (

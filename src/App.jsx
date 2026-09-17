@@ -13,6 +13,7 @@ import Testimonials from './pages/Testimonials'
 import Faq from './pages/Faq'
 import Contact from './pages/Contact'
 import BookConsultation from './pages/BookConsultation'
+import Proposal from './pages/Proposal'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book-consultation" element={<BookConsultation />} />
+          <Route path="/proposal" element={<Proposal />} />
         </Routes>
       </main>
       <Footer />
