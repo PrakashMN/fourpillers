@@ -1,6 +1,6 @@
 # Four Pillers Interiors
 
-Demo website for **Four Pillers Interiors** — a premium interior design studio based in Mumbai. Built by [TheMonsterLabs](mailto:hello@themonsterlabs.com).
+Demo website for **Four Pillers Interiors** — a premium interior design studio based in India. Built by [TheMonsterLabs](mailto:hello@themonsterlabs.com).
 
 > **Demo only** — no backend. Forms show a confirmation state but do not send emails.
 
