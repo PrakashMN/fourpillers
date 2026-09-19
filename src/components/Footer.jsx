@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-about">
-            <h3>Four Pillers <span>Interiors</span></h3>
+            <img src={logo} alt="Four Pillers Interiors" style={{ height: 68, width: 'auto', marginBottom: 16 }} />
             <p>Transforming spaces into timeless works of art. We create bespoke interior designs that reflect your personality and elevate your lifestyle.</p>
             <div className="footer-social">
               <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>

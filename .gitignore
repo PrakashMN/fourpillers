@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Internal sales docs — keep out of the public repo
+pitch-email.md
+deal-playbook.md

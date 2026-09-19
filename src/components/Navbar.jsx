@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import logo from '../assets/logo.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -33,7 +34,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <Link to="/" className="nav-logo">
-          <div className="nav-logo-text">Four Pillers <span>Interiors</span></div>
+          <img src={logo} alt="Four Pillers Interiors" />
         </Link>
 
         <div className="nav-links" style={{ display: menuOpen ? 'flex' : undefined }}>

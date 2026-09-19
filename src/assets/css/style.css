@@ -246,10 +246,11 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-left: 126px;
 }
 
 .nav-logo img {
-  height: 45px;
+  height: 56px;
   width: auto;
 }
 
