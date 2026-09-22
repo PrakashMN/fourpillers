@@ -1170,7 +1170,7 @@ img {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 300px;
+  max-height: 500px;
   padding: 0 28px 24px;
 }
 
@@ -1779,6 +1779,8 @@ img {
 }
 
 @media (max-width: 768px) {
+  .navbar .container { padding: 0 16px; }
+  .nav-logo { margin-left: 0; }
   .navbar .nav-links {
     position: fixed;
     top: 0;
@@ -1827,7 +1829,9 @@ img {
   .consultation-form { padding: 32px 24px; }
   .cta-content h2 { font-size: 2rem; }
   
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-grid > .footer-about,
+  .footer-grid > .footer-newsletter { grid-column: 1 / -1; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .section-tag::before,
   .section-tag::after { width: 24px; }
@@ -1843,4 +1847,15 @@ img {
   .about-intro-image .experience-badge { padding: 16px 24px; }
   .about-intro-image .experience-badge .number { font-size: 1.8rem; }
   .about-intro-image img { height: 300px; }
+}
+
+/* Touch devices: no hover, so keep card overlays visible */
+@media (hover: none) {
+  .portfolio-item .overlay {
+    opacity: 1;
+  }
+  .gallery-item .overlay {
+    opacity: 1;
+    background: rgba(29, 29, 29, 0.35);
+  }
 }

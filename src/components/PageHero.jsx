@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import heroBg from '../assets/images/hero-bg.png'
+import heroBg from '../assets/images/hero-bg.webp'
 import useParallax from '../hooks/useParallax'
 
 export default function PageHero({ title, bgImage }) {

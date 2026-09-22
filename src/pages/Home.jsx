@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useRef, useEffect } from 'react'
 import CtaSection from '../components/CtaSection'
 import ScrollReveal from '../components/ScrollReveal'
-import heroBg from '../assets/images/hero-bg.png'
+import heroBg from '../assets/images/hero-bg.webp'
 import useParallax from '../hooks/useParallax'
 
 const services = [
