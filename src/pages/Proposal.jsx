@@ -31,24 +31,6 @@ const deliverables = [
     ],
   },
   {
-    icon: 'fa-solid fa-chart-line',
-    title: 'Analytics & Insights',
-    items: [
-      'Google Analytics — live visitor tracking dashboard',
-      'Monthly traffic & performance reports',
-      'Conversion tracking on form submissions',
-    ],
-  },
-  {
-    icon: 'fa-solid fa-sliders',
-    title: 'Content Management',
-    items: [
-      'Admin panel to update portfolio projects anytime',
-      'Add / edit testimonials directly — no developer needed',
-      'Text & image updates on any page',
-    ],
-  },
-  {
     icon: 'fa-solid fa-share-nodes',
     title: 'Social Integration',
     items: [
@@ -74,6 +56,37 @@ const deliverables = [
       '99.9% uptime guarantee',
       'Content updates included throughout the year',
       'Training session — manage your own site with confidence',
+    ],
+  },
+]
+
+const addons = [
+  {
+    icon: 'fa-solid fa-robot',
+    title: 'AI Business Chatbot',
+    items: [
+      '24/7 instant auto-replies to visitor questions about your business',
+      'Answers on services, pricing, budget ranges, locations & more',
+      'Never miss a lead — even after working hours',
+      'WhatsApp & website integration, trained on your business details',
+    ],
+  },
+  {
+    icon: 'fa-solid fa-chart-line',
+    title: 'Analytics & Insights',
+    items: [
+      'Google Analytics — live visitor tracking dashboard',
+      'Monthly traffic & performance reports',
+      'Conversion tracking on form submissions',
+    ],
+  },
+  {
+    icon: 'fa-solid fa-sliders',
+    title: 'Content Management',
+    items: [
+      'Admin panel to update portfolio projects anytime',
+      'Add / edit testimonials directly — no developer needed',
+      'Text & image updates on any page',
     ],
   },
 ]
@@ -114,6 +127,34 @@ export default function Proposal() {
 
       <ScrollReveal>
       <section className="section" style={{ background: 'var(--accent)' }}>
+        <div className="container">
+          <div className="section-header">
+            <span className="section-tag">Add-Ons</span>
+            <h2 className="section-title">Optional Extras</h2>
+            <p className="section-subtitle">These can be added to your package — always quoted separately.</p>
+          </div>
+          <div className="services-grid">
+            {addons.map((d, i) => (
+              <div key={i} className="service-card">
+                <div className="icon"><i className={d.icon}></i></div>
+                <h3>{d.title}</h3>
+                <ul style={{ listStyle: 'none', padding: 0 }}>
+                  {d.items.map((item, j) => (
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10 }}>
+                      <i className="fas fa-check" style={{ color: 'var(--secondary)', marginTop: 4, fontSize: '0.85rem', flexShrink: 0 }}></i>
+                      <span style={{ color: 'var(--text-light)', fontSize: '0.92rem' }}>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      </ScrollReveal>
+
+      <ScrollReveal>
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <span className="section-tag">Next Steps</span>
